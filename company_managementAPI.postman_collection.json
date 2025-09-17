@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "79718dbd-0c98-4eda-9b34-4db91cd78fed",
+		"name": "company_managementAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24835744"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "mohit@gmail.com",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12121123",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "mohit",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12121123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/Register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "mohit@gmail.com",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12121123",
+							"contentType": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/Login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8OxbhUaAlClTTEcNUEoKaJzLEXP7YshJiaKqNgdLec2ab94b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer f8876b14e98299208142b2ed9b8b132fb1d71c01990c3e070990a20803ba54ba",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XGLTCsEzUzmDNKcd7VAGBCLTx5XmPEmIDAomvUF4c9a2c21d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/listCompany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XGLTCsEzUzmDNKcd7VAGBCLTx5XmPEmIDAomvUF4c9a2c21d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "fourth second",
+							"type": "text"
+						},
+						{
+							"key": "industry",
+							"value": "Demo",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "H1 fsfsd  asa  HR ,",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/createCompany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"createCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XGLTCsEzUzmDNKcd7VAGBCLTx5XmPEmIDAomvUF4c9a2c21d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deleteCompany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Switch Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XGLTCsEzUzmDNKcd7VAGBCLTx5XmPEmIDAomvUF4c9a2c21d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/SwitchCompany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"SwitchCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XGLTCsEzUzmDNKcd7VAGBCLTx5XmPEmIDAomvUF4c9a2c21d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "fourth sec.",
+							"type": "text"
+						},
+						{
+							"key": "industry",
+							"value": "an",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "fgsgsgf sgsgs",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/updateCompany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateCompany"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

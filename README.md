@@ -27,7 +27,11 @@ here is Api:
 
 I have used RDBMS Mysql DB with all forgin key, Candidate Composit key in Company and user_active_companies respectively.
 
-I have also used soft delete functionality during deletion , and All error handling With validations task have done.
+I have also used soft delete functionality during deletion , and All error handling With validations task have done .
+
+Please Find 
+Company Management JSON - Api's
+Company_management - sql
 
 
 
