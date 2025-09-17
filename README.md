@@ -27,9 +27,8 @@ here is Api:
 
 I have used RDBMS Mysql DB with all forgin key, Candidate Composit key in Company and user_active_companies respectively.
 
-I have also used soft delete functionality during deletion , and All error handling With validations task have done .
+I have also used soft delete functionality during deletion , and All error handling With validations task have done.
 
-Api Full access - https://api.postman.com/collections/24835744-79718dbd-0c98-4eda-9b34-4db91cd78fed?access_key=PMAT-01K5C9JP47AYHZZNB9T32NKTRT 
 
 
 
