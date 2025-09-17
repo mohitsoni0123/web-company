@@ -33,6 +33,8 @@ Please Find
 Company Management JSON - Api's
 Company_management - sql
 
+https://api.postman.com/collections/24835744-79718dbd-0c98-4eda-9b34-4db91cd78fed?access_key=PMAT-01K5C9JP47AYHZZNB9T32NKTRT
+
 
 
 
