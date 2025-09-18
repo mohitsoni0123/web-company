@@ -10,10 +10,10 @@ class user_active_companies extends Pivot
     use HasFactory;
 
     public function users() {
-        return $this->hasMany(User::class,'id','user_id');
+        return $this->hasOne(User::class,'id','user_id');
     }
 
     public function company() {
-        return $this->hasMany(User::class,'id','company_id');
+        return $this->hasOne(User::class,'id','company_id');
     }
 }
